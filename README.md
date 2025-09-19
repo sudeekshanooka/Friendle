@@ -6,8 +6,6 @@ Friendle is a two-player word guessing game designed for iMessage. Inspired by t
 
 Unlike traditional Wordle clones, Friendle focuses on **social gameplay**—two players take turns guessing words, sending results back and forth via iMessage.  
 
-![first](firstscreen.png) ![mssgs](actualMessages.png)
-
 ---
 
 ## Key Features  
@@ -24,16 +22,11 @@ Unlike traditional Wordle clones, Friendle focuses on **social gameplay**—two 
 ### 1. Learning iMessage Frameworks  
 Xcode provides templates for iMessage apps, but the functionality is relatively new and documentation is limited. The first challenge was learning how iMessage apps send and receive data. I used **URL encoding/decoding** to transfer words and game states between players.  
 
-![imessaging](messageLearning.png) ![url](urlPt2.png)
-
 ---
 
 ### 2. Building the User Interface  
 - **Initial Design:** Began with textboxes for each letter, using auto-advance between fields.  
 - **Refined Design:** Rebuilt UI with button-based keyboard and labels for guesses—making it easier to display colors and results.  
-
-![first](firstDesign.png)  
-![initial](initialDesign.png)
 
 ---
 
@@ -42,8 +35,6 @@ Xcode provides templates for iMessage apps, but the functionality is relatively 
 - Added validation checks:  
   - The **GO** button only works if all 5 letters are entered.  
   - Words must exist in a predefined dictionary of 5-letter words.  
-
-![buttons](buttons.png) ![go](gobutton.png)
 
 ---
 
@@ -55,15 +46,43 @@ Xcode provides templates for iMessage apps, but the functionality is relatively 
   - The **latest guess**  
   - The **color results** for each letter  
 
-![decode](decodeurl.png)
-
 ---
 
 ### 5. Feedback & Visuals  
 - Implemented color updates for both guess labels and keyboard keys.  
 - Currently, guessed words and letter colors are transferred, but **keyboard colors don’t yet update across players** (next milestone).  
 
-![changing](colorChange.png) ![sending](sendingColors.png)
+---
+
+## How to Play  
+1. Guess a **five-letter word**.  
+2. After each guess, tile colors show how close your guess was:  
+   - 🟩 Green – letter is correct and in the right spot  
+   - 🟨 Yellow – letter is in the word but in the wrong spot  
+   - ⬛ Grey – letter is not in the word  
+3. Your guess is sent to the other player via iMessage.  
+4. Players take turns guessing until one gets the word.  
+
+The first player to guess the correct word **wins**.  
+
+![How to Play](instructions.JPEG)
+
+---
+
+## Screenshots  
+
+### Gameplay Flow  
+![App Demo](app-store-preview.JPEG)
+
+### Win Screen  
+![Win Screen](winner.JPEG)
+
+### In-Game Views  
+<p float="left">
+  <img src="Image%205-20-22%20at%2011.56%20AM.JPEG" width="250" />
+  <img src="IMG_8533.JPEG" width="250" />
+  <img src="IMG_8534.JPEG" width="250" />
+</p>
 
 ---
 
@@ -80,21 +99,6 @@ Xcode provides templates for iMessage apps, but the functionality is relatively 
 
 ---
 
-## Lessons Learned  
-- Building for iMessage requires **creative use of URLs** for state transfer.  
-- UI/UX in games must prioritize **clarity and engagement** (labels over textboxes).  
-- Iteration and testing are essential—Friendle’s design changed significantly from the initial concept.  
-
----
-
-## Screenshots  
-
-| Gameplay | Messaging | Interface Design |
-|----------|-----------|------------------|
-| ![first](firstscreen.png) | ![mssgs](actualMessages.png) | ![initial](initialDesign.png) |
-
----
-
 ## Tech Stack  
 - **Platform:** iOS (Xcode, iMessage framework)  
 - **Language:** Swift  
@@ -108,5 +112,3 @@ Xcode provides templates for iMessage apps, but the functionality is relatively 
 - 📜 Game history view with scrollable past guesses  
 - 🏆 Win/lose screen and restart option  
 - 🔗 Potential expansion beyond iMessage  
-
-
