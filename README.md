@@ -80,20 +80,13 @@ The first player to guess the correct word **wins**.
 
 ---
 
-## Screenshots  
-
-### Gameplay Flow  
-![App Demo](app-store-preview.JPEG)
-
 ### Win Screen  
 ![Win Screen](winner.JPEG)
 
-### In-Game Views  
-<p float="left">
-  <img src="app-store-preview.JPEG" width="250" />
-  <img src="instructions.JPEG" width="250" />
-  <img src="winner.JPEG" width="250" />
-</p>
+---
+
+### App Store Preview  
+![App Demo](app-store-preview.JPEG)
 
 ---
 
