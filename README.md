@@ -1,3 +1,22 @@
+# Friendle 🎮📱  
+*A multiplayer iMessage word game inspired by Wordle*
+
+## Overview  
+Friendle is a two-player word guessing game designed for iMessage. Inspired by the New York Times’ **Wordle**, Friendle challenges players to guess a hidden five-letter word, but with a twist: the game is played directly in iMessage with real-time multiplayer interaction.  
+
+Unlike traditional Wordle clones, Friendle focuses on **social gameplay**—two players take turns guessing words, sending results back and forth via iMessage.  
+
+---
+
+## Key Features  
+- **Multiplayer Gameplay** – Play head-to-head with friends via iMessage.  
+- **Interactive Keyboard** – Custom in-game keyboard built with buttons, not text fields.  
+- **Word Validation** – Ensures only valid five-letter dictionary words can be submitted.  
+- **Feedback System** – Letters turn **green** (correct spot), **yellow** (wrong spot), or **grey** (not in word).  
+- **State Sharing** – Game state (words + letter colors) is passed between players via encoded URLs.  
+
+---
+
 ## Development Process  
 
 ### 1. Learning iMessage Frameworks  
